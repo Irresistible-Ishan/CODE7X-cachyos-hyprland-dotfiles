@@ -100,4 +100,4 @@ Click the `[ NOTE ]` module on Waybar to trigger `add_note.sh`, which interfaces
 The Waybar features specific scripts found in `~/.config/waybar/scripts/` such as `gpumode.sh`, `toggle_gpu.sh`, `fan-text.sh`, and `fan-icon.sh` which poll hardware sensors and provide one-click toggle capabilities directly on your bar. 
 
 ---
-*Created by [Your Name/Handle]*
+*Created by Ishan Mani Singh (ME) & a little help of gemini 3.1 pro preview*
