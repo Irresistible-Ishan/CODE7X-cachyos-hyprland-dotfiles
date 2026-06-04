@@ -33,6 +33,35 @@ Welcome to my custom Hyprland dotfiles! This setup is highly customized for a Cy
   * CPU/GPU fan speed monitoring and controls.
   * Brightness and power profile management.
 
+## ⌨️ Keybinds & Shortcuts
+
+Here are the primary shortcuts configured in Hyprland (`SUPER` / `Windows Key` is the `$mainMod`):
+
+### Custom Apps & Utilities
+* **`SUPER + W`**: Launch **Code7x Gallery** (Custom Wallpaper Manager).
+* **`SUPER + U`**: Toggle **Code7x Sidebar** (Custom Notes & Widget Panel).
+* **`SUPER + R`**: Open **Rofi App Launcher** (Cyberpunk theme).
+* **`SUPER + T`**: Open **Rofi Emoji Picker**.
+* **`SUPER + SHIFT + V`**: Open **Clipboard History** (via Rofi + Cliphist).
+* **`SUPER + K`**: Open **Kill Menu** (Custom script to kill rogue processes via Rofi).
+
+### System Controls
+* **`SUPER + Q`**: Open Terminal (`alacritty`).
+* **`SUPER + E`**: Open File Manager (`thunar`).
+* **`SUPER + C`**: Close/Kill active window.
+* **`SUPER + L`**: Lock Screen (`hyprlock`).
+* **`SUPER + M`**: Power/Exit Menu (`hyprshutdown` or exit Hyprland).
+* **`SUPER + F`**: Toggle Fullscreen.
+* **`SUPER + V`**: Toggle Floating Window.
+* **`Print Screen`**: Screenshot (select area, copies to clipboard & saves to `~/Pictures/Screenshots`).
+* **`SHIFT + Print Screen`**: Fullscreen Screenshot.
+
+### Workspaces
+* **`SUPER + 1-9`**: Switch to workspace 1-9.
+* **`SUPER + SHIFT + 1-9`**: Move active window to workspace 1-9.
+* **`SUPER + S`**: Toggle Special/Scratchpad Workspace.
+* **`SUPER + SHIFT + S`**: Move active window to Special Workspace.
+
 ## 📦 Requirements
 
 * **OS:** CachyOS / Arch Linux
