@@ -1,0 +1,14 @@
+@import "cyber_clean"
+
+listview {
+    columns: 9;
+    lines: 6;
+}
+
+element {
+    padding: 10px;
+}
+
+element-icon {
+    size: 32px;
+}

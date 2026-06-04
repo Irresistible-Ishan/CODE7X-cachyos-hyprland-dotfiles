@@ -1,0 +1,121 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+}
+
+window#waybar {
+    background: rgba(8, 8, 15, 0.55);
+    color: #cdd6f4;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 6px;
+}
+
+#pulseaudio,
+#backlight,
+#network,
+#battery,
+#clock,
+#custom-power,
+#custom-cpuinfo,
+#custom-igpu,
+#custom-nvidia,
+#custom-note_input,
+#custom-wallpaper {
+    background: rgba(20, 20, 35, 0.75);
+    margin: 4px;
+    padding: 6px 14px;
+    border-radius: 14px;
+}
+
+#custom-note_input {
+    background: rgba(5, 5, 10, 0.9);
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#custom-cpuinfo {
+    color: #89b4fa;
+}
+
+#custom-igpu {
+    color: #cdd6f4;
+}
+
+#custom-nvidia {
+    color: #fab387;
+}
+
+#clock {
+    color: #cba6f7;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#custom-wallpaper {
+    color: #00ffff;
+}
+#custom-gpumode.gpuoff {
+    color: #ff5555;
+    background: rgba(20,20,20,0.95);
+    border: 2px solid #ff5555;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
+#custom-gpumode.gpuon {
+    color: #fab387;
+    background: rgba(20,20,20,0.95);
+    border: 2px solid #fab387;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
+#custom-nvidia.nvidia {
+    color: #fab387;
+    background: rgba(20,20,20,0.75);
+    border-radius: 12px;
+    padding: 4px 10px;
+}
+
+#custom-nvidia.hidden {
+    color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#group-fans {
+    background: rgba(20, 20, 35, 0.75);
+    margin: 4px;
+    padding: 4px 10px;
+    border-radius: 14px;
+}
+
+#custom-fan-icon {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+#custom-fan-text {
+    color: #cdd6f4;
+}
+
+#custom-fan-icon.moving {
+    color: #f9e2af;
+}
+
+#custom-fan-icon.fast {
+    color: #f38ba8;
+}
+
+#custom-fan-icon.stopped {
+    color: #a6adc8;
+}

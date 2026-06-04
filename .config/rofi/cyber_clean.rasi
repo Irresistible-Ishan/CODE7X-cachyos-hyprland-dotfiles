@@ -1,0 +1,89 @@
+/**
+ * CODE7X - CLEAN HOLOGRAPHIC GRID
+ */
+
+* {
+    bg-col:  #0a0a14f2;
+    bg-col-light: #16161ef2;
+    border-col: #00ffff;
+    selected-col: #00ffff;
+    fg-col: #ffffff;
+    
+    width: 900;
+    font: "JetBrainsMono Nerd Font 10";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    height: 600px;
+    border: 1px;
+    border-color: @border-col;
+    background-color: @bg-col;
+    border-radius: 0px;
+}
+
+mainbox {
+    background-color: transparent;
+    padding: 30px;
+}
+
+inputbar {
+    children: [entry];
+    background-color: @bg-col-light;
+    border: 1px;
+    border-color: @border-col;
+    margin: 0px 0px 30px 0px;
+    padding: 12px;
+}
+
+entry {
+    text-color: @fg-col;
+    background-color: transparent;
+    placeholder: "NEURAL_LINK_ACTIVE...";
+    horizontal-align: 0.5;
+}
+
+listview {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    columns: 6; /* True grid */
+    lines: 4;
+    background-color: transparent;
+    fixed-height: false;
+    spacing: 15px;
+}
+
+element {
+    padding: 20px;
+    background-color: transparent;
+    text-color: @fg-col;
+    orientation: vertical;
+    border: 1px;
+    border-color: transparent;
+}
+
+element-icon {
+    size: 48px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin: 10px 0px 0px 0px;
+}
+
+element selected {
+    background-color: #00ffff22; /* Subtle glow instead of solid block */
+    border-color: #00ffff;
+    text-color: #00ffff;
+}
+
+element-text selected {
+    text-color: #00ffff;
+}

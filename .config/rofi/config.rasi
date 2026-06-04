@@ -1,0 +1,15 @@
+configuration{
+    modi: "drun,emoji";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "󰀻";
+    display-emoji: "󰞅";
+    sidebar-mode: false; /* Cleaner look */
+}
+
+@theme "cyber_clean"

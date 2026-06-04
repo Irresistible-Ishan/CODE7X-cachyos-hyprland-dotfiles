@@ -1,0 +1,132 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 8,
+
+    "modules-left": [
+        "pulseaudio",
+        "group/fans",
+        "custom/cpuinfo",
+        "custom/igpu",
+        "custom/gpumode",
+        "custom/nvidia",
+        "custom/wallpaper"
+    ],
+
+    "modules-center": [
+        "custom/note_input"
+    ],
+
+    "modules-right": [
+        "backlight",
+        "bluetooth",
+        "network",
+        "battery",
+        "clock",
+        "custom/power"
+    ],
+
+    "bluetooth": {
+        "format": "󰂯",
+        "on-click": "blueman-manager",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "󰝟 muted",
+        "scroll-step": 5
+    },
+
+    "backlight": {
+        "format": "󰃠 {percent}%",
+        "scroll-step": 5
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {signalStrength}%",
+        "format-disconnected": "󰖪",
+        "on-click": "nm-connection-editor"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
+        "format-icons": [
+            "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+        ]
+    },
+
+    "clock": {
+        "format": "󰃰 {:%d %b %Y  %H:%M}"
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "shutdown now",
+        "on-click-right": "reboot",
+        "on-click-middle": "systemctl suspend"
+    },
+
+    "custom/nvidia": {
+        "exec": "~/.config/waybar/scripts/nvidia.sh",
+        "interval": 2,
+        "return-type": "json"
+    },
+
+    "custom/igpu": {
+        "exec": "~/.config/waybar/scripts/igpu.sh",
+        "interval": 2,
+        "return-type": "json"
+    },
+
+    "custom/cpuinfo": {
+        "exec": "~/.config/waybar/scripts/cpuinfo.sh",
+        "interval": 2,
+        "return-type": "json"
+    },
+
+    "custom/note_input": {
+        "format": "󰎚  [ NOTE ]",
+        "on-click": "~/.config/waybar/scripts/add_note.sh",
+        "tooltip": false
+    },
+
+    "custom/gpumode": {
+        "exec": "~/.config/waybar/scripts/gpumode.sh",
+        "interval": 2,
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/toggle_gpu.sh"
+    },
+
+    "custom/wallpaper": {
+        "format": "󰸉",
+        "on-click": "/home/ishanmanisingh/.config/hypr/scripts/change-wallpaper.sh",
+        "tooltip": false
+    },
+
+    "group/fans": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/fan-icon",
+            "custom/fan-text"
+        ]
+    },
+
+    "custom/fan-icon": {
+        "exec": "~/.config/waybar/scripts/fan-icon.sh",
+        "interval": 2,
+        "return-type": "json",
+        "format": "{}"
+    },
+
+    "custom/fan-text": {
+        "exec": "~/.config/waybar/scripts/fan-text.sh",
+        "interval": 2,
+        "return-type": "json",
+        "format": "{}"
+    }
+}
