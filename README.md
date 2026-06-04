@@ -2,7 +2,22 @@
 
 Welcome to my custom Hyprland dotfiles! This setup is highly customized for a Cyberpunk aesthetic, featuring custom-built GUI applications for wallpaper and note management, built entirely with Python and PyQt6. It is specifically tailored with hardware controls for the **ASUS TUF F15 (FX506HC)** but can be adapted for any system.
 
-![Desktop Preview](.config/waybar/preview.png) *(Add your preview screenshot here!)*
+## 📸 Gallery
+
+### Desktop Overview
+![Desktop](assets/desktop.png)
+
+### Terminal (Alacritty + Fastfetch)
+![Terminal](assets/terminal.png)
+
+### Code7x Gallery (Custom Wallpaper App)
+![Wallpaper App](assets/wallpaper_app.png)
+
+### Code7x Sidebar (Notes & Clipboard)
+![Notes App](assets/notes_app.png)
+
+### Rofi App Launcher
+![App Menu](assets/app_menu.png)
 
 ## 🚀 Features
 
